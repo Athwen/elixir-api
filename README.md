@@ -1,2 +1,0 @@
-# elixir-api
-Elixir server
