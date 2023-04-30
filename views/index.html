@@ -1,2 +1,15 @@
-<h1>Express</h1>
-<a href="elixir://com.example.elixir"> redirect to app </a>
+<body>
+    <h1>Express</h1>
+
+    <script>
+        function returnCode() {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            window.open("elixir://com.example.elixir/landing?code=" + params['code']);
+
+        }
+    </script>
+
+    <input type="button" onclick="returnCode()" value="Redirect to app" />
+
+</body>
